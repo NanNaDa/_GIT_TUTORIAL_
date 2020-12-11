@@ -203,6 +203,28 @@ Link: [Google][googlelink]
 
 
 # 강조
+```
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+```
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+
+> `문장 중간에 사용할 경우에는 **띄어쓰기** 를 사요하는 것이 좋다.`
+> 문장 중간에 사용할 경우에는 **띄어쓰기** 를 사요하는 것이 좋다.
+
+
+# 이미지
+
+
+
+
 
 
 
