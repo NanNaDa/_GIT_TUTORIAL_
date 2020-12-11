@@ -169,6 +169,29 @@ public class BootSpringBootApplication {
 
 
 # 링크(Link)
+- 참조링크
+```
+[link kehword][id]
+
+[id]: URL "Optional Title here"
+
+// code
+Link: [Google][goglelink]
+[googlelink]: https://google.com "Go google"
+```
+Link: [Google][goglelink]
+[googlelink]: https://google.com "Go google"
+
+- 외부링크
+```
+```
+
+- 자동연결
+```
+```
+
+
+# 강조
 
 
 
