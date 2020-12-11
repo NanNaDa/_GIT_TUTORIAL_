@@ -93,9 +93,9 @@ end code block.
 
 ## Code Block
  코드블럭(Code Block)은 다음과 같이 2가지 방식
-```
-- <pre><code>{code}</code></pre> 이용 방식
-```
+
+- `<pre><code>{code}</code></pre>` 이용 방식
+
 
 ```
 <pre>
@@ -119,9 +119,8 @@ public class BootSpringBootApplication {
 </pre>
 
 
-```
+
 - 코드블럭코드("```")을 이용하는 방법
-```
 <pre>
 	<code>
 		```
