@@ -9,7 +9,7 @@
 
 
 # clone
-  : 리모트 서버의 레파지토리에서 클라이언트로 파일을 복사하는 행위.
+ - 리모트 서버의 레파지토리에서 클라이언트로 파일을 복사하는 행위.
 
 $ git clone https://github.com/NanNaDa/_GIT_TUTORIAL_.git
 
