@@ -122,15 +122,17 @@ public class BootSpringBootApplication {
 ```
 - 코드블럭코드("```")을 이용하는 방법
 ```
-```
-```
-public class BootSpringBootApplication {
-	public static void main(String[] args) {
-		System.out.println("Hello, Honeymoon")
-	}
-}
-```
-```
+<pre>
+	<code>
+		```
+		public class BootSpringBootApplication {
+			public static void main(String[] args) {
+				System.out.println("Hello, Honeymoon")
+			}
+		}
+		```
+	</code>
+</pre>
 
 ```
 public class BootSpringBootApplication {
