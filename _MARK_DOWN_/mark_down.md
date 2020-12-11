@@ -93,13 +93,52 @@ end code block.
 
 ## Code Block
  코드블럭(Code Block)은 다음과 같이 2가지 방식
-
+```
 - <pre><code>{code}</code></pre> 이용 방식
+```
+
+```
+<pre>
+<code>
+public class BootSpringBootApplication {
+	public static void main(String[] args) {
+		System.out.println("Hello, Honeymoon")
+	}
+}
+</code>
+</pre>
+```
+<pre>
+<code>
+public class BootSpringBootApplication {
+	public static void main(String[] args) {
+		System.out.println("Hello, Honeymoon")
+	}
+}
+</code>
+</pre>
 
 
+```
+- 코드블럭코드("```")을 이용하는 방법
+```
+```
+```
+public class BootSpringBootApplication {
+	public static void main(String[] args) {
+		System.out.println("Hello, Honeymoon")
+	}
+}
+```
+```
 
-
-
+```
+public class BootSpringBootApplication {
+	public static void main(String[] args) {
+		System.out.println("Hello, Honeymoon")
+	}
+}
+```
 
 
 
