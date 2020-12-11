@@ -54,5 +54,26 @@ This is a normal paragraph:
 
 end code block.
 
+ 중간에 한 줄 띄어쓰지 않으면 인식이 제대로 되지 않는 문제가 발생한다.
+
+
+## Code Block
+ 코드블럭(Code Block)은 다음과 같이 2가지 방식
+
+- <pre><code>{code}</code></pre> 이용 방식
+
+
+
+
+
+
+
+
+
+
+
+
+# references
+1. https://gist.github.com/ihoneymon/652be052a0727ad59601
 
 
