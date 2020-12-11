@@ -176,10 +176,10 @@ public class BootSpringBootApplication {
 [id]: URL "Optional Title here"
 
 // code
-Link: [Google][goglelink]
+Link: [Google][googlelink]
 [googlelink]: https://google.com "Go google"
 ```
-Link: [Google][goglelink]
+Link: [Google][googlelink]
 [googlelink]: https://google.com "Go google"
 
 - 외부링크
