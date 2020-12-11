@@ -243,6 +243,19 @@ __double underscores__
 <img src="/_MARK_DOWN_/image/RubberDuck.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 
 
+# 줄바꿈
+ 3칸 이상 띄어쓰기 ( `   ` )를 하면 줄이 바뀐다.
+
+```
+* 줄 바꿈하기 위해서는 문장 마지막에서 3칸 이상을 띄어쓰기 해야한다.
+
+* 줄 바꿈하기 위해서는 문장 마지막에서 3칸 이상을 띄어쓰기해야 한다.___ \\ 이렇게 띄어쓰기
+```
+* 줄 바꿈하기 위해서는 문장 마지막에서 3칸 이상을 띄어쓰기 해야한다.
+
+* 줄 바꿈하기 위해서는 문장 마지막에서 3칸 이상을 띄어쓰기해야 한다.    \\ 이렇게 띄어쓰기
+
+
 # references
 1. https://gist.github.com/ihoneymon/652be052a0727ad59601
 
