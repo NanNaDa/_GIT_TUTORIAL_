@@ -6,6 +6,14 @@
 
 ### 환경 변수
   - $env
+```
+#!/bin/bash
+
+mkdir ${HOME}/directory
+cd ${HOME}/directory
+touch file.txt
+echo "My name is ${USER}" > file.txt
+```
 
 #!/bin/bash
 
@@ -13,8 +21,6 @@ mkdir ${HOME}/directory
 cd ${HOME}/directory
 touch file.txt
 echo "My name is ${USER}" > file.txt
-
-
 
 
 
