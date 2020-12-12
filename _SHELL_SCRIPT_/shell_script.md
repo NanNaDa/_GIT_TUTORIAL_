@@ -1,6 +1,6 @@
 # Shell Script
 
-## Lecture 01
+## Lecture 01 (환경변수, 종료 상태 변수)
   - 환경 변수
   - 종료 상태 변수($?)
 
@@ -77,6 +77,42 @@ mkdir $dirname && touch_new_file || error_message
 
 Lec_01_03.sh
 
+
+## Lecture 02 (명령어 치환, 산술 확장)
+
+### 명령어 치환
+  - $(명령어열) 또는 '명령어열'
+
+쉡 스크립트에서는 명령어열 실행 결과(표준 출력)을 문자열로 치환 할 수 있다.
+
+```
+#!/bin/bash
+
+today=$(date +%Y-%m-%d)
+filename="file-${today}.txt"
+touch ${filename}
+echo "Hello World" > $filename
+echo "End" >> $filename
+echo "마지막 줄은 '$(tail -n 1 $filename)' 입니다."
+```
+
+Lec_02_01.sh
+
+for 문에서도 아래와 같이 명령어 치환을 사용할 수 있다.
+```
+#!/bin/bash
+
+for filename in $(cd ${PWD}/log; ls *.log | grep -v error.log)
+do
+	echo $filename
+done
+```
+
+Lec_02_02.sh
+
+
+### 산술 확장
+  - $(( 계산식 ))
 
 # References
 1. https://jupiny.com/2017/07/10/shell-script-basic-1/
