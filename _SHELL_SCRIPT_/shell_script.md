@@ -365,17 +365,19 @@ done
 
 Lec_05_04.sh
 
+위의 스크립트를 실행하면 해당 파일을 찾을 수 없다는 에러가 발생할 것이다. 왜냐하면 for 반복문은 기본적으로 공백을 구분자로 항목을 순서대로 처리하기 때문이다. 따라서 지금처럼 파일명에 공백이 있는 경우 `find` 명령어의 결과 `./my movie.txt`, `./my music.txt`, `./my picture.txt`는 `./my`, `movie.exe`, `./my`, `music.txt`, `./my`, `picture.txt`, 6개의 항목으로 구분되어 처리되게 된다.
 
 
+이 때 `end` 명령어의 한 줄씩 읽는 특성을 이용하면 쉽게 해결할 수 있다.
+```
+#!/bin/bash
 
-
-
-
-
-
-
-
-
+find . -name "my *" |
+while read fiel
+do
+	rm "$file"
+done
+```
 
 
 # References
