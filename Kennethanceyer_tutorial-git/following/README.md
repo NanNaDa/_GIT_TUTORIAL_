@@ -9,9 +9,9 @@
 ## 소스 기록
 ### git add
 
-
-	> $ git add .
-
+```bash
+	$ git add .
+```
 
 - `ignore` 파일이나, 삭제한 파일 이력까지 커밋을 하실 경우, `-f` 옵션 이용
 ```bash
