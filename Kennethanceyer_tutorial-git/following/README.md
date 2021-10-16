@@ -131,13 +131,89 @@
 
 
 ## 소스 병합
+- 브랜치를 사용하는 과정에서 가장 중요한 머지와 리베이스 등의 병합 기법입니다.
+- 서로 다른 브랜치에서 서로 다른 코드를 개발되었고, 실제 배포에서 이를 합쳐야 할 때 사용합니다.
+- 병합 방식에서는 크게 `git merge`와 `git rebase`가 존재합니다.
+- 머지 방식과 리베이스 방식의 차이는 아래 이미지를 확인해 주세요.
+![Difference between merge and rebase](https://www.pigno.se/static/assets/images/git_tutorial_merge_rebase.png)
+이미지 출처 [http://git.mikeward.org/](http://git.mikeward.org/)
+- 아래는 머지해야 하는 상황을 구련해봤습니다.
+- `master`에서 `sub` branch가 생성되었으며, master 브랜치에서 sub 브랜치를 머지하고자 합니다.
+- 파일 구성은 아래와 같습니다.
+```git
+	* master -> some_file.txt의 내용
+	* 1번째 단계 HEAD
+	I'm a file.
+```
+
+```git
+	* sub -> some_file.txt의 내용
+	* 2번째 단계 HEAD (최신)
+	I'm a file.
+
+	Inserted new line from the sub branch.
+```
+
+```git
+	$ git checkout -f master
+	$ git merge sub
+	# 현재 브랜치 master, 대상 브랜치 sub.
+	# master에서 sub를 머지합니다.
+	# HEAD -> master
+	# sub  -> sub
+```
+- 머지 이후 master에서 파일을 보면, 아래와 같은 내용을 얻습니다.
+```git
+	* merge 이후 master -> some_file.txt
+	I'm a file.
+
+	Inserted new line from the sub branch.
+```
 
 
-
-
-
-
-
+## 충돌과 해결
+- git으로 merge, rebase 수행시 충돌(conflict)가 발생 할 수 있습니다.
+- 이는 같은 조상을 기준으로, 서로 다른 두개의 브랜치가 같은 소스코드를 변경했을 때 발생합니다.
+```git
+	* master -> some_file.txt의 내용
+	Apple
+```
+- 위는 `master`브랜치의 some_file.txt의 내용이다.
+- 아래는 해당 브랜치를 복제한 `sub` 브랜치이며, 복제 이후 한번 내용을 수정하였습니다.
+```git
+	* sub -> some_file.txt의 내용
+	* 2번째 단계 HEAD
+	Banana
+```
+- 이후 master에서도 내용을 변경하여 버전을 업데이트 합니다.
+```git
+	* master -> some_file.txt의 내용
+	* 2번째 단계 HEAD(sub랑 단계가 겹침)
+	Strawberry
+```
+- 둘 모두 버전이 같으나 같은 라인에서 변경사항이 발생했습니다.
+- 이 경우 충돌이 발생합니다.
+- 충돌이 발생한 some_file.txt를 열어보면 아래와 같은 내용을 보실 수 있습니다.
+```git
+	* 머지 이후 master -> some_file.txt (충돌)
+	<<<<<<< HEAD
+	Strawberry
+	=======
+	Banana
+	>>>>>>> sub
+```
+- 여기서 `HEAD`는 현재 브랜치(master)를 의미합니다.
+- HEAD와 sub의 각각 내용을 보여주고 있는데 꺽쇠(<,>), 이퀄(=) 기호가 없도록 문장 하나를 선택해서 반영해 주어야 충돌이 해결 될 수 있습니다.
+- 여기서는 `master` 브랜치의 Strawberry를 선택하여 충돌을 해결하겠습니다.
+```git
+	* 머지 이후 master -> some_file.txt (수정)
+	Strawberry
+```
+- 수정이 되었다면 머지 해결을 위해 `git add`와 `git commit`으로 충돌(conflict)을 해결하세요.
+```git
+	$ git add *
+	$ git commit -m "Solved the conflict issue."
+```
 
 
 
