@@ -48,6 +48,11 @@ $ git add .
 	$ git commit -m "UI 레이아웃 이슈 수정 및 관리자 벨리데이션 추가. " --amend
 ```
 
+> Git에서 권장하는 메시지 형식
+> 1번째 줄 : 커밋 내의 변경 내용을 요약
+> 2번째 줄 : 빈 칸
+> 3번째 줄 : 변경한 이유
+
 
 ## 소스 업데이트
 - 상대방이 커밋한 파일은 명령어를 통해서 직접 업데이트를 하셔야 동기화가 됩니다.
@@ -225,3 +230,4 @@ $ git add .
 
 # Reference 
 - https://github.com/KennethanCeyer/tutorial-git
+- https://backlog.com/git-tutorial/kr/
