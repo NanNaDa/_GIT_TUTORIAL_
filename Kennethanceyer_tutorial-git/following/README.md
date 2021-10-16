@@ -1,7 +1,7 @@
 ## 깃의 역할
  - 소스 병합 : merge, rebase
  - 소스 리비전 관리 : reset, commit, branch
- - 소스 릴리즈 : push
+ - 소스 릴리즈(로컬 서버 ➞ 원격 저장 서버) : push
  - 소스 태깅 : tag
  - 소스 변경사항 검토 : diff, log
 
@@ -223,3 +223,5 @@
 
 
 
+# Reference 
+- https://github.com/KennethanCeyer/tutorial-git
