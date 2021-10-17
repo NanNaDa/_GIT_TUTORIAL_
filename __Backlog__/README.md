@@ -1,3 +1,5 @@
+# Reference
+https://backlog.com/git-tutorial/kr/
 
 ### Stash
 파일의 변경 내용을 일시적으로 기록해두는 영역.
