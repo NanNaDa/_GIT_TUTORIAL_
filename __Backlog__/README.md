@@ -18,5 +18,5 @@ Stash를 사용하여 작업 트리와 인덱스 내에서 아직 커밋하지 �
   - 릴리스 브랜치(Release branch)
   - 핫픽스 브랜치(Hotfix branch)
 
-![A successful Git branching model]https://backlog.com/git-tutorial/kr/img/post/stepup/capture_stepup1_5_6.png
+![A successful Git branching model](https://backlog.com/git-tutorial/kr/img/post/stepup/capture_stepup1_5_6.png)
 
